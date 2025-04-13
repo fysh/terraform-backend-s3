@@ -41,4 +41,5 @@ resource "aws_s3_bucket_object_lock_configuration" "this" {
       days = 10
     }
   }
+  depends_on = [aws_s3_bucket_versioning.this]
 }
