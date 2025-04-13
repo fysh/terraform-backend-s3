@@ -11,11 +11,6 @@ variable "force_destroy" {
   type        = bool
   default     = false
 }
-variable "lifecycle_prevent_destroy" {
-  description = "Lifecycle prevent destroy"
-  type        = bool
-  default     = true
-}
 variable "versioning" {
   description = "S3 bucket enable versioning"
   type        = string

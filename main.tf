@@ -3,7 +3,7 @@ resource "aws_s3_bucket" "this" {
   force_destroy = var.force_destroy
   tags          = var.tags
   lifecycle {
-    prevent_destroy = var.lifecycle_prevent_destroy
+    prevent_destroy = true
   }
 }
 resource "aws_s3_bucket_versioning" "this" {
